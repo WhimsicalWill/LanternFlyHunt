@@ -5,6 +5,7 @@ import { IconButton, Button} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import PhotoCameraRoundedIcon from "@material-ui/icons/PhotoCameraRounded";
 import GeoLocation from "./components/GeoLocation.jsx"
+import ImageSender from "./components/ImageSender.jsx"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +37,7 @@ function App() {
       if (target.files.length !== 0) {
         const file = target.files[0];
         const newUrl = URL.createObjectURL(file);
+        console.log(newUrl)
         setSource(newUrl);
       }
     }
@@ -46,12 +48,8 @@ function App() {
       <Grid container>
         <Grid item xs={12}>
           <h5>Capture your image</h5>
-          {source &&
-            <Box display="flex" justifyContent="center" border={1} className={classes.imgBox}>
-              <img src={source} alt={"snap"} className={classes.img}></img>
-            </Box>}
           <input
-            accept="image/*"
+            accept="image/*;capture=camera"
             className={classes.input}
             id="icon-button-file"
             type="file"
@@ -67,7 +65,7 @@ function App() {
               <PhotoCameraRoundedIcon fontSize="large" color="primary" />
             </IconButton>
           </label>
-          <Button variant="contained" href="#">
+          <Button variant="contained" href="https://www.google.com/maps/d/u/0/viewer?mid=1LP1-DPYjMNkZsANlaYqVpJSLVz9hH8o&ll=40.00000000000003%2C-79.99999999999999&z=17">
             View Map
           </Button>
           <GeoLocation />

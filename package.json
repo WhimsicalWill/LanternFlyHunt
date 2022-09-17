@@ -1,6 +1,6 @@
 {
   "name": "pwa-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://WhimsicalWill.github.io/LanternFlyHunt",
   "private": true,
   "dependencies": {
@@ -9,6 +9,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "google-form": "^1.0.2",
+    "google-search-results-nodejs": "^2.1.0",
+    "pyodide": "^0.21.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-geolocated": "^4.0.3",

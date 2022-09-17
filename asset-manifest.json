@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/LanternFlyHunt/static/css/main.69eda509.chunk.css",
+    "main.js": "/LanternFlyHunt/static/js/main.9e23689c.chunk.js",
+    "main.js.map": "/LanternFlyHunt/static/js/main.9e23689c.chunk.js.map",
+    "runtime-main.js": "/LanternFlyHunt/static/js/runtime-main.40fbd24c.js",
+    "runtime-main.js.map": "/LanternFlyHunt/static/js/runtime-main.40fbd24c.js.map",
+    "static/js/2.2a85daf2.chunk.js": "/LanternFlyHunt/static/js/2.2a85daf2.chunk.js",
+    "static/js/2.2a85daf2.chunk.js.map": "/LanternFlyHunt/static/js/2.2a85daf2.chunk.js.map",
+    "index.html": "/LanternFlyHunt/index.html",
+    "precache-manifest.d12acdcabf1ad1e265ab1ca741ee1678.js": "/LanternFlyHunt/precache-manifest.d12acdcabf1ad1e265ab1ca741ee1678.js",
+    "service-worker.js": "/LanternFlyHunt/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/LanternFlyHunt/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.2a85daf2.chunk.js.LICENSE.txt": "/LanternFlyHunt/static/js/2.2a85daf2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40fbd24c.js",
+    "static/js/2.2a85daf2.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.9e23689c.chunk.js"
+  ]
+}

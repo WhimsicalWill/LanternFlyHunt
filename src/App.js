@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import { IconButton } from '@material-ui/core';
+import { IconButton, Button} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import PhotoCameraRoundedIcon from "@material-ui/icons/PhotoCameraRounded";
-
+import GeoLocation from "./components/GeoLocation.jsx"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,9 +29,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
 
-
   const [source, setSource] = useState("");
-
 
   const handleCapture = (target) => {
     if (target.files) {
@@ -42,7 +40,6 @@ function App() {
       }
     }
   };
-
 
   return (
     <div className={classes.root}>
@@ -70,6 +67,10 @@ function App() {
               <PhotoCameraRoundedIcon fontSize="large" color="primary" />
             </IconButton>
           </label>
+          <Button variant="contained" href="#">
+            View Map
+          </Button>
+          <GeoLocation />
         </Grid>
       </Grid>
     </div>
